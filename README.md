@@ -19,7 +19,7 @@ This includes enabling cloud services, setting-up shared vpc, etc.
 
 ## Want to Help?
 
-So you want to contribute to Daily API and make an impact, we are glad to hear it. :heart_eyes:
+So you want to contribute to Daily and make an impact, we are glad to hear it. :heart_eyes:
 
 Before you proceed we have a few guidelines for contribution that will make everything much easier.
 We would appreciate if you dedicate the time and read them carefully:
