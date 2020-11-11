@@ -1,0 +1,20 @@
+config:
+  gcp:project: devkit-prod
+  gcp:region: us-central1
+  infra:metabase:
+    javaOpts: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=1 -XshowSettings:vm
+    mbDbDbname:
+      secure: AAABAE2weeNV4YrdijgDZSxo6qbBqmm2vBZM0im2llgWJ7qaUJ8Tqg==
+    mbDbEncryptionSecretKey:
+      secure: AAABAGZ/4RMAIUq3ZK/FIIrz8G5NTGuyUSw7gLDK7tXpGx5Ua0pfiEb5KwljLfKpxYWcFnd4IbMsfgiZeBLUwOQmoqzbmSjWF8RjQw==
+    mbDbHost:
+      secure: AAABAGH4UZ2vzqgrMjxO6TPUW6IGaburyXaWojKlKRG7QKObizFcYrg=
+    mbDbPass:
+      secure: AAABABRYAlIdblj+X1G671lOazJS76XTF8KKi06Qqx3l+guA8ZX5yrtP0fyKWmab
+    mbDbPort:
+      secure: AAABAAvw85Y04HC1RYXVcyPjdX0560RbmmLqn8/MpzJalMka
+    mbDbType:
+      secure: AAABAE3YfPolbxrlLO9YlIXfrLCaRM1zUF5NoKpTMONrsnKorw==
+    mbDbUser:
+      secure: AAABAMljlLQZSTGO7/MR8zJod0CsEWJk0USTXbxBbA41a00g
+  infra:projectNumber: "750405661228"
