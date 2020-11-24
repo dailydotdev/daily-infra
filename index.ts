@@ -62,3 +62,10 @@ export const cloudRunPubSubInvoker = new gcp.serviceaccount.Account('cloud-run-p
   accountId: 'cloud-run-pubsub-invoker',
   displayName: 'Cloud Run Pub/Sub Invoker',
 });
+
+// Exclude Cloud Run 2xx and 3xx logs to reduce cost
+new gcp.logging.ProjectExclusion('logging-exclusion-cloud-run', {
+  description: 'Exclude Cloud Run invocation logs',
+  name: 'cloud-run',
+  filter: `resource.type = "cloud_run_revision" logName="projects/devkit-prod/logs/run.googleapis.com%2Frequests" httpRequest.status>=200 httpRequest.status<400`,
+});
