@@ -69,3 +69,9 @@ new gcp.logging.ProjectExclusion('logging-exclusion-cloud-run', {
   name: 'cloud-run',
   filter: `resource.type = "cloud_run_revision" logName="projects/devkit-prod/logs/run.googleapis.com%2Frequests" httpRequest.status>=200 httpRequest.status<400`,
 });
+
+new gcp.logging.ProjectExclusion('logging-exclusion-cloud-run-404', {
+  description: 'Exclude Cloud Run 404 invocation logs',
+  name: 'cloud-run-404',
+  filter: `resource.type = "cloud_run_revision" logName="projects/devkit-prod/logs/run.googleapis.com%2Frequests" httpRequest.status=404`,
+});
